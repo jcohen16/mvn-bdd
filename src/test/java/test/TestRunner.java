@@ -6,11 +6,15 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resources/features"
+    format = {
+        "json:target/cucumber/results.json",
+        "html:target/cucumber/results.html",
+        "pretty"
+//                "test.ReportFormatter:target/results.json"
+    },
+    features = "src/test/resources/features",
+    tags = {"~@ignored"}
 )
 
 public class TestRunner {
-
-
-
 }
