@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
         "json:target/cucumber/results.json",
         "html:target/cucumber/results.html",
         "pretty"
-//                "test.ReportFormatter:target/results.json"
     },
     features = "src/test/resources/features",
     tags = {"~@ignored"}
