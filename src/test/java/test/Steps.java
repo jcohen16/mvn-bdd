@@ -14,6 +14,6 @@ public class Steps {
         System.out.println("test");
         systemLogger.info("system log info message");
         resultsLogger.info("results log info message");
-        System.out.println();
+        System.out.println(systemLogger);
     }
 }
